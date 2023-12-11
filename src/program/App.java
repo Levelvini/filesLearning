@@ -17,6 +17,8 @@ public class App {
             }
         } catch (IOException e) {
             System.out.println("error: " + e.getMessage());
+        } catch (RuntimeException e) {
+            System.out.println("error : RuntimeException!!");
         }
         finally {
             if (sc != null){
